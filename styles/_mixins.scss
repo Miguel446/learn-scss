@@ -1,0 +1,14 @@
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin params($color, $number){
+    background-color: $color;
+    @if $number > 5 {
+        text-align: right;
+    } @else {
+        text-align: left;
+    }
+}

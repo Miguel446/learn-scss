@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/*
+// Anotações sobre o uso de SCSS //
+
+Obs: É necessário compilar o arquivo .scss para css para ser possível adicionar esses estilos no html
+
+1 - Variáveis
+	$primaryBtn: rgb(49, 201, 44);
+	$variavel: valor;
+	- aceita parametros de css como cor, alinhamento
+    - tbm aceita valores numéricos e strings
+
+2 - Nesting
+    facilita a organização de estilos dentro de uma tag específica, podendo ser necessário utilizar o caracter '&' em determinados componentes
+    e para utilizar eventos como o 'hover'
+
+3 - Mixins
+    são como funções javascript, onde podem ser adicionados parametros css e que permitem a reutilização desses parametros em qualquer parte do codigo
+
+4 - Imports
+    possibilita a separação de estilos em arquivos diferentes, podendo criar um arquivo apenas para mixins ou outro apenas para variáveis e ao trabalhar
+    com um framework como Angular por exemplo, pode-se salvar os estilos de cada componente em um arquivo.scss diferente
+*/
+h1 {
+  background-color: #31c92c;
+}
+
+p {
+  background-color: purple;
+}
+
+a.myClass {
+  background-color: aqua;
+}
+
+a b {
+  background-color: #dac9c9;
+  text-align: center;
+}
+
+a:hover {
+  background-color: chartreuse;
+}
+
+div h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div h5 {
+  background-color: #c7c05b;
+  text-align: left;
+}
+/*# sourceMappingURL=style.css.map */
